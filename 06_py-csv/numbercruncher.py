@@ -11,11 +11,10 @@ import random
 def occupation_reader(file_path): #function creating a dictionary from reading our csv
     occupations = {} #create dictionary
     with open(file_path, 'r') as file:
-        csv_reader = csv.DictReader(file_path,  '\t')
-        for row in csv_reader:
-            occupation = row['Job Class']
-            percentage = float(row['Percentage'])
-            occupations[occupation] = percentage
+        next(file)
+        for line in file:
+            occupation, percentage = line.strip().split(',')
+            occupations[occupation] = (float)(percentage)
     return occupations
 
 def weighted_rand(occupations): #finds a weighted random choice from our dictionary
@@ -26,4 +25,5 @@ def weighted_rand(occupations): #finds a weighted random choice from our diction
 
 if __name__ == "__main__":
     file_path = "occupations.csv"
-    occupation_reader(file_path)
+    occupations = occupation_reader(file_path)
+    print(weighted_rand(occupations))
