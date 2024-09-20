@@ -1,27 +1,29 @@
-# Claire Song, Chloe Wong, Tiffany Yang
+# Tiffany Yang, Chloe Wong, Claire Song
 # Team X
 # SoftDev
-# K05 -- Bitstream/Python File Handling/Get information from text files and store it in a dictionary
-# 2024-09-13
-# time spent: 1
+# K05 -- Adding more info to lists/dicts
+# 2024-09-17
+# time spent: 1 hour
 
 import random
 
-dictList = []
-file = open("krewess.txt", "r")
+krewes_list = []  
 
-#split the data up so that each devo is a separate entry in a list
-data = file.read().split("@@@")
+def createList():
+    with open("05_bitstream/krewes.txt", "r") as file:
+        data = file.read().split("@@@")
+        for person in data:
+            info = person.split("$$$")
+            krewes_list.append({"pd": info[0], "devo": info[1], "ducky": info[2]})
 
-#go through all the data and make a dictionary of the period, name, and duck for each devo and add all the dictionaries to a list 
-for i in range(len(data) - 1):
-    data[i] = data[i].split("$$$")
-    dataDict = {"pd": data[i][0], "name": data[i][1], "duck": data[i][2]}
-    dictList.append(dataDict)
+def pickDevo():
+    createList()  
+    if len(krewes_list) == 0:
+        print("The list of krewes is empty!")
+        return
+    l = len(krewes_list) - 1
+    choice = random.randint(0, l)
+    devo = krewes_list[choice]
+    print(devo["devo"] + " " + devo["pd"] + " " + devo["ducky"])
 
-#pick a random devo and print their information
-index = random.randint(0, len(dictList) - 1)
-entry = dictList[index]
-print("Period: " + entry["pd"])
-print("Name: " + entry["name"])
-print("Ducky: " + entry["duck"])
+pickDevo()
