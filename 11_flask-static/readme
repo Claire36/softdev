@@ -1,0 +1,2 @@
+1. At the root page of the localhost, it should show "No hablo queso!", which is the return value.
+2. In the terminal, "the __name__ of this module is..." and "__main__" should be printed every time the webpage is accessed because the file is not being imported.
