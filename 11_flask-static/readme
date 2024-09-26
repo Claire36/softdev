@@ -1,2 +1,4 @@
-1. At the root page of the localhost, it should show "No hablo queso!", which is the return value.
-2. In the terminal, "the __name__ of this module is..." and "__main__" should be printed every time the webpage is accessed because the file is not being imported.
+I expect http://localhost:5000/static/foo to not show anything. A file with the plaintext in foo is downloaded when I access the file via http://localhost:5000/static/foo.
+
+I expect http://localhost:5000/static/foo.html to show "Is this plaintext, though?" when the second function is commented out. I expect it to show a random number when it is not commented out. These predictions seem true.
+
