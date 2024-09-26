@@ -1,9 +1,9 @@
 # Claire Song, Chloe Wong, Tiffany Yang
 # Team X
 # SoftDev
-# K04 -- Random Devo/Python Dictionaries & Random Selection/Select random devo from dictionary
-# 2024-09-13
-# time spent: 0.15
+# K11 -- Some Things Never Change
+# 2024-09-25
+# time spent: 0.5
 
 # DEMO
 # basics of /static folder
