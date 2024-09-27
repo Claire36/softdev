@@ -1,20 +1,20 @@
-# Claire Song, Chloe Wong, Tiffany Yang
-# Team X
+# Claire Song, Suhana Kumar, Stella Yampolsky
+# Team CSS
 # SoftDev
-# K11 -- Just Plug It In
-# 2024-09-26
-# time spent: 1
+# K12 -- Just Plug It In
+# 2024-09-27
+# time spent: 0.5
 
 """
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q0:
-<your response here>
+There is a NameError when you try to visit localhost:5000/my_foist_template because the return value of test_tmplt() uses render_template, but render_template was never imported.
 
 Q1:
-<your response here>
+Yes, 127.0.0.1:500/my_foist_template
 
 Q2:
-<your response here>
+The first argument is the name of the file that has the html code, the second argument is the value that is passed into the title of the page, and the third argument is the list of numbers that the html code iterates through and prints.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
 
