@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> potato </title>
+  </head>
+
+  <body>
+    <p>this will be our webpage</p><br>
+    <p>we're cooking - Claire Song + Pomegranate & Sasha (Alex) Murokh + Kotik</p><br>
+    
+    <table>
+        {%- for row in items %}
+          <tr>
+          {%- for column in row %}
+            <td>{{ column }}</td>
+          {%- endfor %}
+          </tr>
+        {%- endfor %}
+        </table>
+        
+     <p>Randomly selected: {{randomly_selected}}</p><br>
+  </body>
+
+</html>
