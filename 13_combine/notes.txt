@@ -1,0 +1,8 @@
+Notes:
+{% ... %} can be used for statements in an html template (such as for loops)
+{{ ... }} can be used for expressions to print
+You can place <tr> and <td> in a nested for loop in the html template to turn a 2d array into a table in html
+You can use <a href={{link}}> to create a link that can change.
+Jinja can work with Python & HTML and display a webpage using code in both languages.
+
+EGO:

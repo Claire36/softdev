@@ -1,14 +1,26 @@
+<!--
+Claire Song, Sasha Murokh
+we're cooking
+SoftDev
+K13 -- Template for Success
+2024-09-30
+time spent: 1.5
+-->
+
 <!DOCTYPE html>
 
 <html>
 
   <head>
-    <title> potato </title>
+    <title> Randomly Selected Jobs </title>
   </head>
 
   <body>
-    <p>this will be our webpage</p><br>
+    <p>This is our webpage of randomly selected jobs from the list below.</p>
     <p>we're cooking - Claire Song + Pomegranate & Sasha (Alex) Murokh + Kotik</p><br>
+
+    <p>Randomly selected job: {{randomly_selected}}<br>
+       Helpful resource: <a href={{link}}>Link to get started</a></p><br>
     
     <table>
         {%- for row in items %}
@@ -19,8 +31,8 @@
           </tr>
         {%- endfor %}
         </table>
+	<br>
         
-     <p>Randomly selected: {{randomly_selected}}</p><br>
   </body>
 
 </html>

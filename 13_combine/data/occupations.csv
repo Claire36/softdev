@@ -1,24 +1,24 @@
-Job Class,Percentage
-Management,6.1
-Business and Financial operations,5
-Computer and Mathematical,2.7
-Architecture and Engineering,1.7
-"Life, Physical and Social Science",0.9
-Community and Social Service,1.6
-Legal,0.8
-"Education, training and library",6.1
-"Arts, design, entertainment, sports and media",1.7
-Healthcare practioners and technical,5.5
-Healthcare support,2.8
-Protective service,2.3
-Food preparation and serving,8.3
-Building and grounds cleaning and maintenance,3.7
-Personal care and service,4
-Sales,10.2
-Office and administrative support,15.1
-"Farming, fishing and forestry",0.6
-Construction and extraction,4.3
-"Installation, maintenance and repair",3.8
-Production,6.1
-Transportation and material moving,6.5
+Job Class,Percentage, Link
+Management,6.1,https://www.indeed.com/career-advice/finding-a-job/getting-into-management
+Business and Financial operations,5,https://www.sjvc.edu/blog/how-to-get-into-business/
+Computer and Mathematical,2.7,https://www.coursera.org/articles/how-to-get-a-job-in-it
+Architecture and Engineering,1.7,https://youngarchitect.com/becoming-an-architect/
+"Life, Physical and Social Science",0.9,https://research.com/careers/social-science-careers
+Community and Social Service,1.6,https://www.socialworklicensure.org/careers/
+Legal,0.8,https://www.indeed.com/career-advice/finding-a-job/how-to-get-job-in-law-firm
+"Education, training and library",6.1,https://www.nysut.org/resources/special-resources-sites/look-at-teaching/becoming-a-teacher-legacy
+"Arts, design, entertainment, sports and media",1.7,https://research.com/careers/art-and-design-careers#:~:text=To%20start%20a%20career%20in,%2C%20photography%2C%20or%20graphic%20design.
+Healthcare practioners and technical,5.5,https://www.indeed.com/career-advice/finding-a-job/how-to-become-a-healthcare-practitioner
+Healthcare support,2.8,https://online-learning-college.com/knowledge-hub/careers/how-to-become-a-healthcare-support-worker/
+Protective service,2.3,https://www.indeed.com/career-advice/finding-a-job/how-to-become-a-cps-worker
+Food preparation and serving,8.3,https://www.careerexplorer.com/careers/food-preparation-worker/how-to-become/
+Building and grounds cleaning and maintenance,3.7,https://www.indeed.com/career-advice/careers/what-does-a-groundskeeper-do
+Personal care and service,4,https://www.integrityinc.org/3-steps-to-become-a-personal-care-provider/
+Sales,10.2,https://www.professionalacademy.com/blogs/how-to-start-a-career-in-sales/
+Office and administrative support,15.1,https://iticollege.edu/blog/tips-for-succeeding-in-your-office-administration-job/
+"Farming, fishing and forestry",0.6,https://www.indeed.com/career-advice/finding-a-job/how-to-become-farmer
+Construction and extraction,4.3,https://www.cefcolorado.org/5-essential-points-of-advice-for-anyone-starting-a-job-in-construction/
+"Installation, maintenance and repair",3.8,https://www.raise.me/careers/installation-maintenance-and-repair/
+Production,6.1,https://www.indeed.com/career-advice/finding-a-job/how-to-get-in-the-film-industry
+Transportation and material moving,6.5,https://jobya.com/library/industries/transportation/articles/landing_your_dream_job_in_transportation_a_step-by-step_guide
 Total,99.8
