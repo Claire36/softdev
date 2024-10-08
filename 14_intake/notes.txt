@@ -14,9 +14,9 @@ DISCO:
 
 
 Q/C/C:
-* 
-* 
-* 
+* What is the significance of methods=['GET', 'POST'] next to @app.route()?
+* Under what circumstances would "this print statement came from test module" be printed?
+* Is there a way to get specific elements of request.headers?
 -----------------------------------------------------------------------
 
 
