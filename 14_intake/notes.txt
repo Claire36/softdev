@@ -1,9 +1,15 @@
-< your heading here >
+Claire Song
+Team X
+SoftDev
+K14 -- Who Do Forms Work For?
+2024-10-7
+time spent: 0.5
+
 
 DISCO:
-* 
-* 
-* 
+* print(request) prints the link of the server: <Request 'http://127.0.0.1:5000/' [GET]>
+* When the form is submitted, request.args is ImmutableMultiDict([('username', {user}), ('sub1', 'Submit')])
+* When the form is submitted, you are directed to 'http://127.0.0.1:5000/auth?username={user}&sub1=Submit'
 -----------------------------------------------------------------------
 
 
