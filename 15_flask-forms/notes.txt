@@ -1,0 +1,27 @@
+Claire Song
+Team X
+SoftDev
+K15 -- Take & Give
+2024-10-8
+time spent: 0.5
+
+
+DISCO:
+* GET is the default request method. POST must be specified.
+* Using the POST method, the print(request) prints <Request 'http://127.0.0.1:5000/response' [POST]>. With the GET method, it is <Request 'http://127.0.0.1:5000/response?username={{user}}&sub1=Submit' [GET]>.
+* The GET method saves user input in the URL, while POST saves it in the background. You can reload the page with the GET method, but an alert pops up when you try to reload with the POST method. User input can be saved in the browser history with the GET method, which makes it seem less secure than POST.
+-----------------------------------------------------------------------
+
+
+Q/C/C:
+* What does value="login" do in the line <input type="submit" name="login" value="login">?
+* What are the secure request methods?
+* What are some examples of cases where it would be appropriate to use GET or POST?
+-----------------------------------------------------------------------
+
+
+OTHER?
+* 
+* 
+* 
+-----------------------------------------------------------------------
