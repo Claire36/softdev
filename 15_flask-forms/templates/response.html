@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
   Claire Song
-  Team X
+  Topher Forever
   SoftDev
   K15 -- Take & Give
   2024-10-8
@@ -16,15 +16,14 @@
   </head>
 
   <body>
+    <h1>{{ greeting }}</h1>
+    <p>Request Method Used: {{ method }}</p>
+    <p>{{ explanation }}</p>
 
-    Team X: Ben, Tiffany, Claire
+    <h2>Team: {{ team_name }}</h2>
+    <h3>Roster: {{ roster | join(', ') }}</h3>
 
-    <h1>
-      Hello, {{username}}!
-    </h1>
-
-  Request Method: {{method}}
-
+    <a href="/">Go back to the form</a>
   </body>
 
 </html>

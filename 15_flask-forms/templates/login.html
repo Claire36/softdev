@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
   Claire Song
-  Team X
+  Topher Forever
   SoftDev
   K15 -- Take & Give
   2024-10-8
@@ -16,22 +16,20 @@
   </head>
 
   <body>
+    <h1>Welcome to the team: {{ team_name }}!</h1>
+    <h2>Roster: {{ roster | join(', ') }}</h2>
 
-    Team X: Ben, Tiffany, Claire
-
-    <h1>
-      Howdy, friends!
-    </h1>
-
-    <h3>
-      Enter your username below to proceed.
-    </h3>
-
-    <form action="/response" method="POST">
-      <input type="text" name="username">
-      <input type="submit" name="sub1">
+    <form action="/submit" method='POST'>
+        <label for="username">Enter Your Name:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">Submit</button>
     </form>
-    <br>
+
+    <p>Alternatively, you can submit with GET:</p>
+    <form action="/submit" method="GET">
+        <input type="text" name="username" placeholder="Your name">
+        <input type="submit" value="Submit with GET">
+    </form>
   </body>
 
 </html>
