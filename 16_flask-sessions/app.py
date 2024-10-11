@@ -12,6 +12,7 @@ from flask import session
 import os
 
 app = Flask(__name__)    #create Flask object
+app.secret_key = os.urandom(32)
 
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
@@ -26,6 +27,8 @@ def disp_loginpage():
     #print(request.args['username'])
     #print("***DIAG: request.headers ***")
     #print(request.headers)
+    if 'username' in session:
+        return "Logged in as " + session['username']
     return render_template( 'login.html' )
 
 
@@ -42,12 +45,15 @@ def authenticate():
     #print(request.args['username'])
     #print("***DIAG: request.headers ***")
     #print(request.headers)
-    app.secret_key = os.urandom(32)
+    session['username'] = request.args['username']
     print(session)
     print(request.cookies)
     return render_template( 'response.html', response = request.args['username'], method = request.method)  #response to a form submission
 
-
+@app.route("/logout")
+def logout():
+    session.pop('username')
+    return render_template( 'logout.html' )
     
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
