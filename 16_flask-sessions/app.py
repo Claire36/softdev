@@ -1,9 +1,9 @@
 # Chloe Wong, Tiffany Yang, Claire Song
 # Team X
 # SoftDev
-# K15 -- user sessions
+# K16 -- Take and Keep
 # 2024-10-9
-# Time Spent:
+# Time Spent: 3
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -14,43 +14,19 @@ import os
 app = Flask(__name__)    #create Flask object
 app.secret_key = os.urandom(32)
 
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/") #show login screen, shows response.html (home screen) if user is already logged in
 def disp_loginpage():
-    #print("\n\n\n")
-    #print("***DIAG: this Flask obj ***")
-    #print(app)
-    #print("***DIAG: request obj ***")
-    #print(request)
-    #print("***DIAG: request.args ***")
-    #print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    #print("***DIAG: request.headers ***")
-    #print(request.headers)
     if 'username' in session:
-        return "Logged in as " + session['username']
+        return render_template( 'response.html', response = session['username'], method = request.method)
     return render_template( 'login.html' )
 
 
-@app.route("/auth", methods=['GET', 'POST'])
+@app.route("/auth", methods=['GET', 'POST']) #adds current username as an entry in session, then shows the hope page
 def authenticate():
-    #print("\n\n\n")
-    #print("***DIAG: this Flask obj ***")
-    #print(app)
-    #print("***DIAG: request obj ***")
-    #print(request)
-    #print("***DIAG: request.args ***")
-    #print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    #print("***DIAG: request.headers ***")
-    #print(request.headers)
     session['username'] = request.args['username']
-    print(session)
-    print(request.cookies)
     return render_template( 'response.html', response = request.args['username'], method = request.method)  #response to a form submission
 
-@app.route("/logout")
+@app.route("/logout") #removes the username from session so that user can log out, then shows the logout screen
 def logout():
     session.pop('username')
     return render_template( 'logout.html' )

@@ -14,11 +14,11 @@ app = Flask(__name__)
 team_name = "Topher Forever"
 roster = ["Ben Rudinski, Claire Song, Tiffany Yang"]
 
-@app.route('/')
+@app.route('/') #prompts user to log in
 def index():
     return render_template('login.html', team_name=team_name, roster=roster)
 
-@app.route('/submit', methods=['GET', 'POST'])
+@app.route('/submit', methods=['GET', 'POST']) #homepage shows the username & method & explanation
 def submit():
     username = request.args.get('username') if request.method == 'GET' else request.form.get('username')
     method_used = request.method

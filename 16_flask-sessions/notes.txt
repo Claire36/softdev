@@ -1,0 +1,12 @@
+Chloe Wong, Tiffany Yang, Claire Song
+Team X
+SoftDev
+K16 -- Take and Keep
+2024-10-9
+Time Spent: 3
+
+Plan: 
+If a user logs in, then add their username to the session. Then, instead of showing them the login page, show them the home page.
+Check if the user is logged in by checking if 'username' is in session.
+When a user logs out, remove their username from the session using session.pop('username').
+The HTML templates are for logging in, the homepage displaying the username, and the logout screen. When a user is not logged in, they are prompted to enter their username. Then, they can see the homepage until they log out, which is when they will see a confirmation that they logged out successfully.
