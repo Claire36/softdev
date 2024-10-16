@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Chloe Wong, Tiffany Yang, Claire Song
+  Team X
+  SoftDev
+  K17 -- The Sincerest Form of Flattery
+  2024-10-15
+  Time Spent: 1
+-->
+
+.top {
+  background-color: #D3D3D3;
+}
+.left {
+  float: left;
+  background-color: #787878;
+  height: 250px;
+  width: 20%;
+}
+.right {
+  float: inline-start;
+  background-color: #787878;
+  height: 250px;
+  width: 80%;
+}
+.bottom {
+  background-color: #585858;
+}
+.copyright {
+  color: #808080;
+  font-size: 1.5em;
+  text-align: right;
+}
+h1 {
+  font-size: 2.25em;
+  color: white;
+  text-align: center;
+  margin: 0em;
+}
+h2 {
+  font-size: 1.75em;
+  margin: 0em;
+  padding: 0.25em 0 0 0;
+}
+h3 {
+  font-size: 1.5em;
+  margin: 0em;
+  padding: 10px;
+}
+h4 {
+  margin: 0em;
+  color: #D3D3D3;
+  padding: 10px;
+  font-size: 1.15em;
+}
