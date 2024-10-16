@@ -12,7 +12,7 @@ app = Flask(__name__)    #create Flask object
 
 @app.route("/")
 def mimic():
-    return render_template("templates/index.html")
+    return render_template("index.html")
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
