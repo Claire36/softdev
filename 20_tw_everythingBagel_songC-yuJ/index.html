@@ -7,64 +7,188 @@ K20 -- Bootstrap From the Foundation on up, with a Tailwind...
 Time Spent: 1
 -->
 
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-teal-100">
-  <div class="border-4 border-sky-800/75 rounded-lg p-8">
-    <p>You can make a to-do list with checkboxes like this: </p><br>
-    <h1 class="select-none text-center text-3xl font-bold underline underline-offset-2">
-      To-Do list
-      <h2 class="text-center">
-        <label>
-          <input type="checkbox" class="accent-blue-500" checked> Wake Up
-        </label>
-        <br>
-        <label>
-          <input type="checkbox" class="accent-blue-500" checked> Eat breakfast
-        </label>
-        <h2>
+<body class="bg-teal-50">
+
+  <div class="shadow-xl shadow-sky-500/50 rounded-lg bg-gradient-to-r from-blue-500 from-20% via-sky-500 via-40% to-violet-300 to-80% box-border h-50 w-50 p-4 border-4 border-t-4 border-white-500">
+    <!-- There's many ways to customize your sections.
+    shadow-xl: casts a large shadow
+    shadow-sky-500/50: colors the shadow
+    rounded-lg: rounds the corners
+    bg-gradient-to-r from-blue-500...to-80%: makes a gradient with different colors
+    box-border: adds a border:
+    h-50: height
+    w-50: width
+    p-4: size of section
+    border-t-4 border-t-4 border-white-500: customizes border width and color -->
+  <h1 class="select-none text-center text-3xl font-bold underline underline-offset-2 cursor-pointer">
+    <!-- cursor-pointer: changes cursor to a pointer when over that text -->
+    To-Do list
+    <h2 class="text-center">
+      <label>
+        <input type="checkbox" class="accent-blue-500" checked> Wake Up
+        <!-- accent-blue-500: gives the checkmark a color -->
+      </label>
+      <br></br>
+      <label>
+        <input type="checkbox" class="accent-blue-500" checked> Eat breakfast
+      </label>
+      <br></br>
+      <label>
+        <input type="checkbox" class="accent-blue-500" checked> Go to school
+      </label>
+      <br></br>
+      <label>
+        <input type="checkbox" class="accent-blue-500" checked> Attend clubs
+      </label>
+      <br></br>
+      <label>
+        <input type="checkbox" class="accent-blue-500" checked> Go home
+      </label>
+      <br></br>
+      <label>
+        <input type="checkbox" class="accent-blue-500" checked> Eat dinner
+      </label>
+      <br></br>
+      <label>
+        <input type="checkbox" class="accent-blue-500" checked> Sleep
+      </label>
+      <h2>
+</div>
+<br></br>
+<div class="flex justify-center items-center">
+<h3 class="text-center">
+  <table class="border-separate border-spacing-1 border border-gray-700 table-auto">
+    <thead>
+      <tr>
+        <th class="border border-gray-700">Other things I've done</th>
+        <th class="border border-gray-700">Places I've done them</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-gray-700">Touch grass</td>
+        <td class="border border-gray-700">The Park</td>
+      </tr>
+      <tr>
+        <td class="border border-gray-700">Eaten dinner</td>
+        <td class="border border-gray-700">McDonalds</td>
+      </tr>
+      <tr>
+        <td class="border border-gray-700">Fed Cows</td>
+        <td class="border border-gray-700">Farm</td>
+      </tr>
+    </tbody>
+  </table>
+  <br></br>
+  <button class="rounded-full bg-sky-500 hover:bg-blue-700 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-150 hover:bg-indigo-500 duration-300">
+    <!-- rounded-full: rounds the edges
+        hover:bg-blue-700: changes the color of the button when hovered over
+        transition ease-in-out: transition type
+        hover:scale-150: how large the button gets once hovered over
+        duration-300: how long the effect lasts
+    -->
+    Hover over this button
+  </button>
+  <br></br>
+  <button class="rounded-full bg-orange-500 hover:bg-red-700 transition ease-in-out delay-150 bg-red-500 hover:-translate-y-1 hover:scale-50 hover:bg-yellow-500 duration-150">
+    Hover over this button too
+  </button>
+</h3>
+</div>
+<br></br>
+<hr>
+  <div class="columns-2 text-center">
+    <p>Well, let me tell you something, ...</p>
+    <p class="break-after-column">Sure, go ahead, laugh...</p>
+    <!-- break-after-column: breaks the text into a new colymn right after the next inputted text -->
+    <p>Maybe we can live without...</p>
+    <p>Look. If you think this is...</p>
   </div>
-  <div class="border-4 border-sky-700/75 rounded-lg p-8">
-    <p>You can create buttons with different cursors and rings around them when hovered:</p>
-    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-blue-400 rounded-lg m-4 p-1 cursor-wait">Button</button>
-    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-violet-400 rounded-lg m-4 p-1 cursor-text">Button</button>
-    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-fuchsia-400 rounded-lg m-4 p-1 cursor-not-allowed">Button</button>
+  <br></br>
+  <hr>
+  <br></br>
+  <div class="columns-3 text-center">
+    <p>Well, let me tell you something, ...</p>
+    <p class="break-before-column">Sure, go ahead, laugh...</p>
+    <!-- break-before-column: breaks the text into a new column before the next inputted text -->
+    <p>Maybe we can live without...</p>
+    <p>Look. If you think this is...</p>
   </div>
-  <div class="border-4 border-sky-600/75 rounded-lg p-8 bg-white/30 backdrop-hue-rotate-60">
-      <p>You can rotate the hue of the background in a certain div:</p>
+  <hr>
+  <div class="text-center">
+      <span class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">
+        Helloooooooooo<br />
+        Whats up
+      </span>
+      <p class="font-sans">The pigs rolls in the mud</p>
+      <p class="font-serif">The pigs rolls in the mud</p>
+      <p class="font-mono">The pigs rolls in the mud</p>
+      <p class="text-sm underline decoration-solid">The pigs rolls in the mud</p>
+      <p class="text-base underline decoration-double">The pigs rolls in the mud</p>
+      <p class="text-lg underline decoration-dotted">The pigs rolls in the mud</p>
+      <p class="text-xl underline decoration-dashed">The pigs rolls in the mud</p>
+      <p class="text-2xl underline decoration-wavy">The pigs rolls in the mud</p>
+      <!-- different fonts, text sizes, and underlines that you can use -->
+      <br></br>
+      <select>
+        <option>Yes</option>
+        <option>Yesss</option>
+        <option>Yesssss</option>
+      </select>
+      <!-- gives you a bunch of options to choose from -->
+    </div>
+    <br></br>
+    <div class="relative text-center">
+    <div class="absolute pointer-events-auto ...">
+      <svg class="absolute text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+      </svg>
+    </div>
+    <input type="text" placeholder="Search" class="...">
   </div>
-  <div class="border-4 border-sky-500/75 rounded-lg p-8 bg-white/30 backdrop-hue-rotate-180">
-      <p>And you can rotate it even more:</p>
+  <br></br>
+  <!--You can surround a div with a rounded border-->
+  <div class="border-4 border-sky-700/75 rounded-lg p-8 text-center">
+    <!--You can create buttons with different cursors and rings around them when hovered-->
+    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-blue-400 rounded-lg m-4 p-1 cursor-wait">Hover over this button</button>
+    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-violet-400 rounded-lg m-4 p-1 cursor-text">And this button</button>
+    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-fuchsia-400 rounded-lg m-4 p-1 cursor-not-allowed">And this button</button>
   </div>
-  <div class="border-4 border-sky-400/75 rounded-lg p-8">
-    <p>You can create a table with different spacing between entries when you hover and click on it:</p>
-    <table class="border border-blue-950 border-separate m-4 bg-slate-100 hover:border-spacing-2 active:border-collapse">
-      <thead>
-        <tr>
-          <th class="border border-slate-400">Column 1</th>
-          <th class="border border-slate-400">Column 2</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-slate-400">Entry</td>
-          <td class="border border-slate-400">Entry</td>
-        </tr>
-        <tr>
-          <td class="border border-slate-400">Entry</td>
-          <td class="border border-slate-400">Entry</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="grid grid-cols-3 divide-x text-center bg-teal-200">
+    <div class="p-10">It</div>
+    <!--This rotates the hue of the background of a div-->
+    <div class="backdrop-hue-rotate-60 p-10">changes</div>
+    <div class="backdrop-hue-rotate-180 p-10">colors!!!</div>
   </div>
-  <div class="border-4 border-sky-300/75 rounded-lg p-8">
-    <p>You can add transitions between a button's normal state and it's state when hovered:</p>
-    <button class="transition duration-700 ease-in-out bg-slate-50 m-4 rounded-lg border-2 border-slate-300 p-1 hover:scale-125 hover:bg-lime-100">Button</button>
+  <hr>
+  <div class="flex flex-row p-10">
+    <!--This creates a div that changes sizes when hovered-->
+    <div class="basis-1/4 hover:basis-1/2">Hover here</div>
+    <div>It moves!</div>
+  </div>
+  <hr>
+  <!--This creates a div that changes colors when clicked on-->
+  <div class="p-10 text-center active:bg-teal-500">
+    <p>Click here</p>
+  </div>
+  <hr>
+  <div class="m-12">
+    <h1 class="text-3xl font-bold underline">A Very Cool List</h1>
+    <!--This creates a list with custom bullet points-->
+    <ul class="list-image-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTRZzYFM417cB-rVskqgPgCnnO68na12NJQ&s)]">
+      <li>Look</li>
+      <li>At</li>
+      <li>These</li>
+      <li>Bullet</li>
+      <li>Points!</li>
+    </ul>
   </div>
 </body>
 </html>
