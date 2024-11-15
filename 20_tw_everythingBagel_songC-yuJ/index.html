@@ -1,0 +1,70 @@
+<!--
+Claire Song, Jessica Yu
+Everything Bagel
+SoftDev
+K20 -- Bootstrap From the Foundation on up, with a Tailwind...
+2024-11-14
+Time Spent: 1
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-teal-100">
+  <div class="border-4 border-sky-800/75 rounded-lg p-8">
+    <p>You can make a to-do list with checkboxes like this: </p><br>
+    <h1 class="select-none text-center text-3xl font-bold underline underline-offset-2">
+      To-Do list
+      <h2 class="text-center">
+        <label>
+          <input type="checkbox" class="accent-blue-500" checked> Wake Up
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" class="accent-blue-500" checked> Eat breakfast
+        </label>
+        <h2>
+  </div>
+  <div class="border-4 border-sky-700/75 rounded-lg p-8">
+    <p>You can create buttons with different cursors and rings around them when hovered:</p>
+    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-blue-400 rounded-lg m-4 p-1 cursor-wait">Button</button>
+    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-violet-400 rounded-lg m-4 p-1 cursor-text">Button</button>
+    <button class="border-2 border-slate-300 bg-slate-50 hover:ring-2 ring-fuchsia-400 rounded-lg m-4 p-1 cursor-not-allowed">Button</button>
+  </div>
+  <div class="border-4 border-sky-600/75 rounded-lg p-8 bg-white/30 backdrop-hue-rotate-60">
+      <p>You can rotate the hue of the background in a certain div:</p>
+  </div>
+  <div class="border-4 border-sky-500/75 rounded-lg p-8 bg-white/30 backdrop-hue-rotate-180">
+      <p>And you can rotate it even more:</p>
+  </div>
+  <div class="border-4 border-sky-400/75 rounded-lg p-8">
+    <p>You can create a table with different spacing between entries when you hover and click on it:</p>
+    <table class="border border-blue-950 border-separate m-4 bg-slate-100 hover:border-spacing-2 active:border-collapse">
+      <thead>
+        <tr>
+          <th class="border border-slate-400">Column 1</th>
+          <th class="border border-slate-400">Column 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-400">Entry</td>
+          <td class="border border-slate-400">Entry</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-400">Entry</td>
+          <td class="border border-slate-400">Entry</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="border-4 border-sky-300/75 rounded-lg p-8">
+    <p>You can add transitions between a button's normal state and it's state when hovered:</p>
+    <button class="transition duration-700 ease-in-out bg-slate-50 m-4 rounded-lg border-2 border-slate-300 p-1 hover:scale-125 hover:bg-lime-100">Button</button>
+  </div>
+</body>
+</html>
