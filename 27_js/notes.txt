@@ -1,0 +1,16 @@
+Team Chip & Dip :: Claire Song, Chloe Wong
+SoftDev
+K27 - Basic Functions in JavaScript
+2025-01-06
+time spent: 0.5
+
+DISCO:
+* Define functions by using let [function name] = function(variables) {...}
+* Between the brackets, everything looks pretty similar to Java.
+* Something seems to always be returned when you press enter. Sometimes, the return value will be undefined.
+-----------------------------------------------------------------------
+Q/C/C:
+* What are some cases where it would be helpful to use JavaScript, and how is it usually used?
+* Why combine Java and Scheme? What are the advantages of creating the JavaScript language?
+* How would you go about implementing object-oriented programming?
+-----------------------------------------------------------------------
