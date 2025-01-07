@@ -1,4 +1,4 @@
-Team Chip & Dip :: Claire Song, Chloe Wong
+Team Mongoose :: Claire Song, Chloe Wong
 SoftDev
 K27 - Basic Functions in JavaScript
 2025-01-06
