@@ -1,0 +1,16 @@
+Team Mongoose :: Claire Song, Chloe Wong
+SoftDev
+K28 - Manipulating the DOM
+2025-01-07
+time spent: 0.5
+
+DISCO:
+* You can create objects with var o = {property : value}
+* The document object has all of the HTML for a page, and you can use functions like getElementById to select specific parts of the page.
+* Calling functions in the console and also in the JavaScript file allows you to make changes to the page.
+-----------------------------------------------------------------------
+Q/C/C:
+* What determines which color an element is when multiple are specified in its class? Is it related to the hex codes?
+* What's the difference between using var and let to define functions?
+* Is it almost always a good idea to link the js file at the end of the body?
+-----------------------------------------------------------------------
