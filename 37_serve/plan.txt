@@ -1,0 +1,4 @@
+1. Install Nginx on droplet
+2. Read through tutorial, research any new concepts/unfamiliar libraries
+3. Follow tutorial, take notes on any commands used
+4. Test to see if app works
