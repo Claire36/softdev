@@ -26,7 +26,7 @@ systemd:
 - sudo systemctl start myproject
 - sudo systemctl enable myproject: lets it start at boot
 - sudo systemctl status myproject: just to check the status
-Passing requests to socket:
+passing requests to socket:
 - sudo nano /etc/nginx/sites-available/myproject: configuration file
 	- server_name _;
 - sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled: linking file to directory (so you can access it without making a copy)
